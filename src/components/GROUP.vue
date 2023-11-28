@@ -1,11 +1,7 @@
 <template>
-  <div class="group-unit">
-    <div class="group-border">
-      <ExpNodeList :expNodeList="node.value || []" />
-    </div>
-    <div class="wrap-container comment">
-      分组#{{ node.groupId }}，{{ comment }}
-    </div>
+  <div class="unit-box">
+    <ExpNodeList :expNodeList="node.value || []" />
+    <div class="unit-box-comment">分组#{{ node.groupId }}，{{ comment }}</div>
   </div>
 </template>
 <script setup>

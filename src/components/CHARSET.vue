@@ -1,9 +1,7 @@
 <template>
-  <div class="group-unit">
-    <div>
-      <ExpNodeList :expNodeList="node.value" />
-    </div>
-    <div class="wrap-container comment">其中任意一个字符{{ comment }}</div>
+  <div class="unit-box">
+    <ExpNodeList :expNodeList="node.value" />
+    <div class="unit-box-comment">其中任意一个字符{{ comment }}</div>
   </div>
 </template>
 <script setup>
