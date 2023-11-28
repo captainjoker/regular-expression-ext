@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "正则解读器",
+  "version": "1.0.0",
+  "description": "表达式解读机，哪里不会点哪里",
+  "author": "xixixi",
+  "action": {
+    "default_title": "正则解读器",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "img/16x16.png",
+    "48": "img/48x48.png",
+    "128": "img/128x128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "omnibox": {
+    "keyword": "kmerp"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "notifications",
+    "contextMenus",
+    "tabs",
+    "webRequest",
+    "storage"
+  ],
+  "host_permissions": ["http://*/*", "https://*/*", "*://*/*", "<all_urls>"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "sandbox": "sandbox allow-scripts; script-src 'self'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "*/assets/*" ],
+      "matches": [ "*://*/*" ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "regular-expression-ext",
+  "version": "1.0.0",
+  "description": "表达式解读机，哪里不会点哪里",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/captainjoker/regular-expression-generate-node.git"
+  },
+  "author": "xixixi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/captainjoker/regular-expression-generate-node/issues"
+  },
+  "homepage": "https://github.com/captainjoker/regular-expression-generate-node#readme",
+  "dependencies": {
+    "reg-exp-generate-node": "^1.0.4",
+    "vue": "^3.3.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^5.2.0",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "eslint": "^8.54.0",
+    "less": "^4.2.0",
+    "vite": "^5.0.2",
+    "vite-plugin-static-copy": "^1.0.0"
+  }
+}
