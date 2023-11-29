@@ -7,24 +7,21 @@ import legacy from '@vitejs/plugin-legacy';
 
 export default defineConfig({
   build: {
-   /*  rollupOptions: {
-      input: {
-        popup: resolve(__dirname, './src/popup/index.html'),
-        // options: resolve(__dirname, 'options.html')
-      },
+    rollupOptions: {
       output: {
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/index.js',
+        chunkFileNames: 'assets/[name].[ext]',
+        assetFileNames: 'assets/[name].[ext]',
       }
     }
- */
+
   },
   plugins: [
     vue(),
-    legacy({
+    /* legacy({
       targets: ['ie >= 11'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime']
-    }),
+      // additionalLegacyPolyfills: ['regenerator-runtime/runtime']
+    }), */
     /* viteStaticCopy({
       targets: [
         {

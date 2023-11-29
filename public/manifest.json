@@ -5,12 +5,13 @@
   "description": "表达式解读机，哪里不会点哪里",
   "author": "xixixi",
   "action": {
-    "default_title": "正则解读器"
+    "default_title": "表达式解读机，哪里不会解哪里",
+    "default_popup": "index.html"
   },
   "icons": {
-    "16": "img/16x16.png",
-    "48": "img/48x48.png",
-    "128": "img/128x128.png"
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
   },
   "content_scripts": [
     {

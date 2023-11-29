@@ -1,6 +1,6 @@
 <template>
   <div class="unit-box">
-    <ExpNodeList :expNodeList="node.value" />
+    <ExpNodeList :expNodeList="node.value" :inSet="true"/>
     <div class="unit-box-comment">其中任意一个字符{{ comment }}</div>
   </div>
 </template>

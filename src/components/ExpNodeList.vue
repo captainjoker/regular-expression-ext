@@ -3,6 +3,7 @@
     v-for="node in expNodeList"
     :node="node"
     :is="nodes[node.type]"
+    :inSet="inSet"
   />
 </template>
 <script setup>
@@ -30,5 +31,6 @@ const nodes = {
 };
 const props = defineProps({
   expNodeList: Array,
+  inSet: Boolean
 });
 </script>
